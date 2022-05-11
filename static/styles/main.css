@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.main-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    transition: 2s ease-in-out;
+}
+.main-box{
+    width: 50%;
+    position: absolute;
+    top: 7rem;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+}
+.main-box h1{
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-box p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+.main-box form{
+    margin-top: 2rem;
+}
+.main-box form input{
+    border-radius: 10px;
+    height: 2.5rem;
+}
+#cityName{
+    width: 60%;
+    padding-left: 1rem;   
+}
+#sub-btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+    border-color: white;
+    background:none;
+    color: white;
+}
+
+/*=============================================weather page============================================*/
+.main-weather{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(93, 93, 255),rgb(16, 190, 117));
+    padding-bottom: 2rem;
+}
+.weather-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+}
+.weather-location{
+    color: white;
+}
+.location{
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.region{
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+.time{
+    font-size: 1.4rem;
+    display: block;
+}
+.weather-current{
+    color: white;
+}
+.weather-current img{
+    width: 8rem;
+    display: block;
+}
+.current-condition{
+    font-size: 2rem;
+    display: block;
+}
+.current-temp{
+    font-size: 3rem;
+    display: block;
+    font-weight: bold;
+}
+.forecast-day{
+    width: 90%;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.forecastday-sub{
+    display: inline-block;
+    text-align: center;
+}
+.forecastday-sub span{
+    display: block;
+}
+.forecastday-values{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.forecastday-sub img{
+    width: 3rem;
+}
+.cards-container{
+    width: 90%;
+    margin: 4rem auto 0;
+}
+.cards{
+    width: 90%;
+    margin:1rem auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+    background-image: linear-gradient(to bottom, rgb(93, 93, 255),rgb(16, 190, 117));
+    color: white;
+}
+.cards span{
+    display: block;
+    margin-bottom: 0.3rem;
+}
+.cards img{
+    width: 6rem;
+}
+.cards-temp{
+    font-size: 2.5rem;
+}
+/*==========================error page=======================================*/
+.errorcontainer{
+    width: 80%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 4rem auto;
+
+}
+.errorcontainer button{
+    display: block;
+    margin: 3rem auto;
+    width: 8rem;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.7rem;
+}
+
+/*=================================================large devices===============================================*/
+@media screen and (max-width:1200px){
+    .main-box{
+        width: 70%;
+    }
+}
+
+/*===============================================medium devices=================================================*/
+@media screen and (max-width:992px){
+    .main-box{
+        width: 85%;
+    }
+    .forecastday-values {
+        font-size: 1.2rem;
+    }
+}
+
+/*====================================================small devices===================================================*/
+@media screen and (max-width:768px){
+    .main-box h1{
+        font-size: 4rem;
+    }
+    .forecast-day{
+        flex-wrap: wrap;
+    }
+    .forecastday-sub{
+        width: 33%;
+        margin-bottom: 0.3rem;
+    }
+    .cards{
+        width: 80%;
+    }
+}
+
+/*===================================================mobile devices=============================================*/
+@media screen and (max-width:576px){
+    .main-box h1{
+        font-size: 3rem;
+    }
+    .main-box p {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    #cityName {
+        width: 90%;
+        display: block;
+        margin: auto auto 1rem;
+    }
+    .location {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .region {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .time {
+        font-size: 1rem;
+    }
+    .weather-current img {
+        width: 6rem;
+        margin: auto;
+    }
+    .current-condition {
+        font-size: 1.3rem;
+    }
+    .current-temp {
+        font-size: 2.4rem;
+    }
+    .weather-header {
+        padding: 2rem 2rem;
+    }
+}
+
+
+

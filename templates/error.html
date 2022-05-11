@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <div class="errorcontainer">
+        <span>Could'nt fetch the details of the city that you have entered!</span>
+        <a href="{% url 'mainfun' %}"><button>Retry</button></a>
+    </div>
+</body>
+</html>
